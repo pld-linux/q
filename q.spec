@@ -1,14 +1,13 @@
 Summary:	Q eQuational Programming System
 Summary(pl):	System programowania równaniowego Q
 Name:		q
-Version:	3.3
+Version:	5.4
 Release:	1
 License:	GPL
 Group:		Development/Languages
-#Source0Download: http://www.musikwissenschaft.uni-mainz.de/~ag/q/q.php
-Source0:	http://www.musikwissenschaft.uni-mainz.de/~ag/q/%{name}-%{version}.tar.gz
-# Source0-md5:	2c350909dbd959aca31ad25c2abb881b
-URL:		http://www.musikwissenschaft.uni-mainz.de/~ag/q/
+Source0:	http://dl.sourceforge.net/q-lang/%{name}-%{version}.tar.gz
+# Source0-md5:	71e08233b49ee5faa6f28419533e472c
+URL:		http://q-lang.sourceforge.net/
 BuildRequires:	gmp-devel
 BuildRequires:	ncurses-devel
 BuildRequires:	readline-devel
