@@ -94,9 +94,9 @@ rm -rf $RPM_BUILD_ROOT
 %doc README ChangeLog NEWS AUTHORS etc/qinitrc etc/qexitrc etc/q-mode.el
 %attr(755,root,root) %{_bindir}/*
 %attr(755,root,root) %{_libdir}/*.so.*.*.*
-%attr(755,root,root) %{_libdir}/*.la
+%{_libdir}/*.la
 %attr(755,root,root) %{_libdir}/q/clib.so
-%attr(755,root,root) %{_libdir}/q/clib.la
+%{_libdir}/q/clib.la
 %{_includedir}/*.h
 %{_datadir}/q/lib
 %{_mandir}/man1/*
@@ -110,12 +110,12 @@ rm -rf $RPM_BUILD_ROOT
 
 %files tk
 %attr(755,root,root) %{_libdir}/q/tk.so
-%attr(755,root,root) %{_libdir}/q/tk.la
+%{_libdir}/q/tk.la
 %{_libdir}/q/tk.a
 %{_datadir}/q/lib/tk.q
 
 %files octave
 %attr(755,root,root) %{_libdir}/q/octave.so
-%attr(755,root,root) %{_libdir}/q/octave.la
+%{_libdir}/q/octave.la
 %{_libdir}/q/octave.a
 %{_datadir}/q/lib/octave.q
