@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Development/Languages
 Source0:	http://www.musikwissenschaft.uni-mainz.de/~ag/q/%{name}-%{version}.tar.gz
+URL:		http://www.musikwissenschaft.uni-mainz.de/~ag/q/
 BuildRequires:	ncurses-devel
 BuildRequires:	readline-devel
 BuildRequires:	gmp-devel
