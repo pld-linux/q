@@ -1,11 +1,11 @@
 Summary:	Q eQuational Programming System
 Summary(pl):	System programowania równaniowego Q
 Name:		q
-Version:	3.2
+Version:	3.3
 Release:	1
 License:	GPL
 Group:		Development/Languages
-Source0:	%{name}-%{version}.tar.gz
+Source0:	http://www.musikwissenschaft.uni-mainz.de/~ag/q/%{name}-%{version}.tar.gz
 BuildRequires:	ncurses-devel
 BuildRequires:	readline-devel
 BuildRequires:	gmp-devel
