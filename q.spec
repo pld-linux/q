@@ -1,12 +1,12 @@
 Summary:	Q eQuational Programming System
 Summary(pl):	System programowania równaniowego Q
 Name:		q
-Version:	5.4
+Version:	6.0
 Release:	1
 License:	GPL
 Group:		Development/Languages
 Source0:	http://dl.sourceforge.net/q-lang/%{name}-%{version}.tar.gz
-# Source0-md5:	71e08233b49ee5faa6f28419533e472c
+# Source0-md5:	bbf875950eed0aa0c8df1a657d74f273
 URL:		http://q-lang.sourceforge.net/
 BuildRequires:	gmp-devel
 BuildRequires:	ncurses-devel
