@@ -5,13 +5,15 @@ Version:	3.3
 Release:	1
 License:	GPL
 Group:		Development/Languages
+#Source0Download: http://www.musikwissenschaft.uni-mainz.de/~ag/q/q.php
 Source0:	http://www.musikwissenschaft.uni-mainz.de/~ag/q/%{name}-%{version}.tar.gz
 # Source0-md5:	2c350909dbd959aca31ad25c2abb881b
 URL:		http://www.musikwissenschaft.uni-mainz.de/~ag/q/
+BuildRequires:	gmp-devel
 BuildRequires:	ncurses-devel
 BuildRequires:	readline-devel
-BuildRequires:	gmp-devel
 BuildRequires:	tk-devel
+Requires(post,postun):	/sbin/ldconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -78,6 +80,9 @@ cp -a examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+%clean
+rm -rf $RPM_BUILD_ROOT
+
 %post
 [ ! -x /usr/sbin/fix-info-dir ] || /usr/sbin/fix-info-dir -c %{_infodir} >/dev/null 2>&1
 /sbin/ldconfig
@@ -86,18 +91,17 @@ cp -a examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 [ ! -x /usr/sbin/fix-info-dir ] || /usr/sbin/fix-info-dir -c %{_infodir} >/dev/null 2>&1
 /sbin/ldconfig
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
 %defattr(644,root,root,755)
 %doc README ChangeLog NEWS AUTHORS etc/qinitrc etc/qexitrc etc/q-mode.el
 %attr(755,root,root) %{_bindir}/*
 %attr(755,root,root) %{_libdir}/*.so.*.*.*
 %{_libdir}/*.la
+%dir %{_libdir}/q
 %attr(755,root,root) %{_libdir}/q/clib.so
 %{_libdir}/q/clib.la
 %{_includedir}/*.h
+%dir %{_datadir}/q
 %{_datadir}/q/lib
 %{_mandir}/man1/*
 %{_infodir}/*info*
