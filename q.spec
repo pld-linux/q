@@ -26,7 +26,7 @@ nim napisane sk³adaj± siê z równañ opisuj±cych funkcje.
 Summary:	Tk bindings for Q langauge
 Summary(pl):	Wi±zania Tk dla jêzyka Q
 Group:		Development/Languages
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description tk
 Tk bindings for Q langauge.
@@ -38,7 +38,7 @@ Wi±zania Tk dla jêzyka Q.
 Summary:	Octave bindings for Q langauge
 Summary(pl):	Wi±zania do Octave dla jêzyka Q
 Group:		Development/Languages
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 Requires:	octave
 
 %description octave
@@ -51,7 +51,7 @@ Wi±zania do Octave dla jêzyka Q.
 Summary:	Static library for Q langauge
 Summary(pl):	Statyczna biblioteka jêzyka Q
 Group:		Development/Languages
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description static
 Static library for Q langaug
