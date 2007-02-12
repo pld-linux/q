@@ -1,5 +1,5 @@
 Summary:	Q eQuational Programming System
-Summary(pl):	System programowania równaniowego Q
+Summary(pl.UTF-8):   System programowania rÃ³wnaniowego Q
 Name:		q
 Version:	6.0
 Release:	1
@@ -18,25 +18,25 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Q is an equational programming language.
 
-%description -l pl
-Q jest jêzykiem programowania równaniowego. Oznacza to, ¿e programy w
-nim napisane sk³adaj± siê z równañ opisuj±cych funkcje.
+%description -l pl.UTF-8
+Q jest jÄ™zykiem programowania rÃ³wnaniowego. Oznacza to, Å¼e programy w
+nim napisane skÅ‚adajÄ… siÄ™ z rÃ³wnaÅ„ opisujÄ…cych funkcje.
 
 %package tk
 Summary:	Tk bindings for Q langauge
-Summary(pl):	Wi±zania Tk dla jêzyka Q
+Summary(pl.UTF-8):   WiÄ…zania Tk dla jÄ™zyka Q
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
 
 %description tk
 Tk bindings for Q langauge.
 
-%description tk -l pl
-Wi±zania Tk dla jêzyka Q.
+%description tk -l pl.UTF-8
+WiÄ…zania Tk dla jÄ™zyka Q.
 
 %package octave
 Summary:	Octave bindings for Q langauge
-Summary(pl):	Wi±zania do Octave dla jêzyka Q
+Summary(pl.UTF-8):   WiÄ…zania do Octave dla jÄ™zyka Q
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
 Requires:	octave
@@ -44,20 +44,20 @@ Requires:	octave
 %description octave
 Octave bindings for Q langauge.
 
-%description octave -l pl
-Wi±zania do Octave dla jêzyka Q.
+%description octave -l pl.UTF-8
+WiÄ…zania do Octave dla jÄ™zyka Q.
 
 %package static
 Summary:	Static library for Q langauge
-Summary(pl):	Statyczna biblioteka jêzyka Q
+Summary(pl.UTF-8):   Statyczna biblioteka jÄ™zyka Q
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
 
 %description static
 Static library for Q langaug
 
-%description static -l pl
-Statyczna biblioteka jêzyka Q
+%description static -l pl.UTF-8
+Statyczna biblioteka jÄ™zyka Q
 
 %prep
 %setup -q
