@@ -1,5 +1,5 @@
 Summary:	Q eQuational Programming System
-Summary(pl.UTF-8):   System programowania równaniowego Q
+Summary(pl.UTF-8):	System programowania równaniowego Q
 Name:		q
 Version:	6.0
 Release:	1
@@ -24,7 +24,7 @@ nim napisane składają się z równań opisujących funkcje.
 
 %package tk
 Summary:	Tk bindings for Q langauge
-Summary(pl.UTF-8):   Wiązania Tk dla języka Q
+Summary(pl.UTF-8):	Wiązania Tk dla języka Q
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
 
@@ -36,7 +36,7 @@ Wiązania Tk dla języka Q.
 
 %package octave
 Summary:	Octave bindings for Q langauge
-Summary(pl.UTF-8):   Wiązania do Octave dla języka Q
+Summary(pl.UTF-8):	Wiązania do Octave dla języka Q
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
 Requires:	octave
@@ -49,7 +49,7 @@ Wiązania do Octave dla języka Q.
 
 %package static
 Summary:	Static library for Q langauge
-Summary(pl.UTF-8):   Statyczna biblioteka języka Q
+Summary(pl.UTF-8):	Statyczna biblioteka języka Q
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
 
