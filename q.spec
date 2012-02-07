@@ -2,7 +2,7 @@ Summary:	Q eQuational Programming System
 Summary(pl.UTF-8):	System programowania równaniowego Q
 Name:		q
 Version:	6.0
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages
 Source0:	http://dl.sourceforge.net/q-lang/%{name}-%{version}.tar.gz
